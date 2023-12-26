@@ -13,7 +13,7 @@ echo "[ ] Show suggested and recent apps in Dock (default: on)"
 defaults write com.apple.dock show-recents -bool false
 echo "[Always] Prefer tabs when opening documents"
 defaults write NSGlobalDomain AppleWindowTabbingMode -string "always"
-echo "## Hot Corners"
+echo "## Hot Corners (Doesn't work yet)"
 echo "[Start Screen Saver] Top Left Corner (default: off)"
 defaults write com.apple.dock wvous-tl-corner -int 5
 defaults write com.apple.dock wvous-tl-modifier -int 1048576
