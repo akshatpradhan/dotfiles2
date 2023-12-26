@@ -23,7 +23,9 @@ if ! command -v brew &>/dev/null; then
   brew install fish
   echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
   chsh -s /opt/homebrew/bin/fish
+  /opt/homebrew/bin/fish
   fish_add_path "/opt/homebrew/bin"
+  fish_add_path "/opt/homebrew/sbin"
   brew update
   brew bundle
   brew upgrade
