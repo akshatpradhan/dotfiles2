@@ -2,8 +2,8 @@
 
 # Version 3
 echo "Checking for Command Line Tools for Xcode..."
-
-if ! xcode-select -p &>/dev/null; then
+if [ ! -d "$(xcode-select -p)" ]; then
+  # if ! xcode-select -p &>/dev/null; then
   echo "Installing Command Line Tools for Xcode..."
   xcode-select --install
   sudo xcodebuild -license accept
@@ -15,7 +15,8 @@ sudo softwareupdate --install-rosetta --agree-to-license
 echo "Performing software updates..."
 sudo softwareupdate --all --install --force
 
-if ! command -v brew &>/dev/null; then
+if test ! "$(which brew)"; then
+  # if ! command -v brew &>/dev/null; then
   echo "Installing Homebrew..."
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   eval "$(/opt/homebrew/bin/brew shellenv)"

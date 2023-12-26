@@ -99,9 +99,10 @@ ilancosman/tide@v5
 jethrokuan/z
 jorgebucaran/autopair.fish
 meaningful-ooo/sponge
-might need to do fish_add_path /opt/homebrew/opt/ruby/bin
+
 
 rbenv install 3.2.1
+might need to do fish_add_path /opt/homebrew/opt/ruby/bin
 brew install xz pyenv
 set -Ux PYENV_ROOT $HOME/.pyenv
 fish_add_path $PYENV_ROOT/bin
