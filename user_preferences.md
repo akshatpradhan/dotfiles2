@@ -75,10 +75,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew doctor
 
 
-brew install fish
-echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells 
-#sudo sh -c 'echo /opt/homebrew/bin/fish >> /etc/shells'
-fish_add_path "/opt/homebrew/bin"
+
 brew install fisher
 # Download these fonts, then drag them into fontbook
 https://github.com/IlanCosman/tide#fonts
