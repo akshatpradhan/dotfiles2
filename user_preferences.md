@@ -76,14 +76,10 @@ brew doctor
 
 
 
-brew install fisher
+
 # Download these fonts, then drag them into fontbook
 https://github.com/IlanCosman/tide#fonts
 # Configure Terminal > Profiles -> Font > Meslo LGS NF Regular 11 and linespacing 1.15
-fisher install IlanCosman/tide@v5
-fisher install jethrokuan/z
-fisher install jorgebucaran/autopair.fish
-fisher meaningful-ooo/sponge
 
 ### For CSC220
 touch ~/.config/fish/conf.d/abbrs.fish
@@ -92,15 +88,11 @@ echo "abbr -a cd /Users/akshatpradhan/Documents/courses/csc220/www" >> ~/.config
 
 
 fisher install rbenv/fish-rbenv <<something funky going on around here, look at fisher list
-ilancosman/tide@v5
-jethrokuan/z
-jorgebucaran/autopair.fish
-meaningful-ooo/sponge
 
 
-rbenv install 3.2.1
-might need to do fish_add_path /opt/homebrew/opt/ruby/bin
-brew install xz pyenv
+
+
+
 set -Ux PYENV_ROOT $HOME/.pyenv
 fish_add_path $PYENV_ROOT/bin
 vi ~/.config/fish/config.fish

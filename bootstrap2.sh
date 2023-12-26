@@ -12,9 +12,16 @@ brew bundle
 brew upgrade
 
 # Ruby
-echo 'status --is-interactive; and ~/.rbenv/bin/rbenv init - fish | source' >>~/.config/fish/config.fish
-rbenv install 3.2.2
-# fish_add_path /opt/homebrew/opt/ruby/bin
+#echo 'status --is-interactive; and ~/.rbenv/bin/rbenv init - fish | source' >>~/.config/fish/config.fish
+cp fish/config.fish ~/.config/fish/config.fish
+set -Ux PYENV_ROOT $HOME/.pyenv
+fish_add_path $PYENV_ROOT/bin
+
+rbenv install 3.3.0
+rbenv global 3.3.0
+pyenv install 3.11.3
+pyenv global 3.11.3
+## fish_add_path /opt/homebrew/opt/ruby/bin
 
 # Fisher Plugins
 # fisher install IlanCosman/tide@v5

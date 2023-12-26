@@ -21,7 +21,7 @@ brew "catch2"
 
 ## Ruby
 brew "rbenv"
-brew "ruby-build"
+#brew "ruby-build"
 brew "libyaml"
 
 ## Python
