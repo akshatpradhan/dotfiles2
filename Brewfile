@@ -26,7 +26,7 @@ brew "libyaml"
 
 ## Python
 brew "pyenv"
-brew "xz"
+#brew "xz"
 
 ## Shell
 brew "shfmt" # Autoformat shell script source code

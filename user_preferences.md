@@ -1,13 +1,5 @@
 
-
 [x] Enable Siri
-
-
-
-
-
-
-
 
 
 # Display the Finder "Quit" option (default: off) (Questioning)
@@ -94,6 +86,8 @@ https://github.com/IlanCosman/tide#fonts
 fisher install IlanCosman/tide@v5
 fisher install jethrokuan/z
 fisher install jorgebucaran/autopair.fish
+fisher meaningful-ooo/sponge
+
 ### For CSC220
 touch ~/.config/fish/conf.d/abbrs.fish
 echo "abbr -a cd /Users/akshatpradhan/Documents/courses/csc220/www" >> ~/.config/fish/conf.d/abbrs.fish
@@ -128,7 +122,6 @@ Install Penumbra theme for visual studio and enable Auto Dark and Autolight with
 
 
 # App Store
-sudo softwareupdate --install-rosetta
 next-dns
 
 1password

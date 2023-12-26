@@ -17,11 +17,17 @@ sudo softwareupdate --all --install --force
 
 if ! command -v brew &>/dev/null; then
   echo "Installing Homebrew..."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   eval "$(/opt/homebrew/bin/brew shellenv)"
+
+  brew install fish
+  echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
+  chsh -s /opt/homebrew/bin/fish
+  fish_add_path "/opt/homebrew/bin"
   brew update
   brew bundle
   brew upgrade
+  fish_update_completions
 fi
 
 # echo "Checking Command Line Tools for Xcode"
