@@ -1,2 +1,0 @@
-# Wallpaper
-[Hawaii Valley]

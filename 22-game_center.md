@@ -1,2 +1,0 @@
-# Game Center
-[x] Signout
