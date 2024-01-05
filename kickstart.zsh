@@ -45,17 +45,12 @@ install_fish() {
 
 }
 
-clone_dotfiles() {
-  print "Cloning dotfiles..."
-  git clone
-}
 elevate_root_access
 install_xcode
 install_rosetta
 install_system_updates
 install_homebrew
 install_fish
-clone_dotfiles
 
 # echo "Checking Command Line Tools for Xcode"
 # if [ ! -d "$(xcode-select -p)" ]; then
